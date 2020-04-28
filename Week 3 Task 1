@@ -1,0 +1,17 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Task_1 {
+    public static void main (String[] args){
+        Scanner scan = new Scanner(System.in);
+        String objectName = scan.nextLine();
+        if (objectName.equals("Wall")){
+            System.out.println("Go Sideway");
+        }else if (objectName.equals("Chair")){
+            System.out.println("Jump");
+        }else if (objectName.equals("Empty")){
+            System.out.println("Forward");
+        }
+    }
+}
