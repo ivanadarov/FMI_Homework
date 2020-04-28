@@ -1,0 +1,31 @@
+package Task;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Task_2 {
+    public static void main (String[] args) {
+        Scanner reader = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        Random Rand = new Random();
+        int pixels = reader.nextInt();
+        int hits = reader.nextInt();
+        if (pixels % 2 == 0)
+            System.out.println("Mouse detected. Robot is ready to attack!");
+        if (hits == 4) {
+            System.out.println("Battery is low. No more hits left!");
+        } else if (hits < 4) {
+            System.out.println("Ready to attack!");
+        }int number = rand.nextInt(10);
+        if (number == 5) {
+            System.out.println("Furniture destroyed!");
+        } else {
+            System.out.println("Mouse destroyed!");
+        }
+        if (hits == 4) {
+            System.out.println("Need to recharge!");
+        } else if (hits < 4) {
+            System.out.println("Ready to attack!");
+        }
+    }
+}
